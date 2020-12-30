@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/userProfile.css" rel="stylesheet">
 
 </head>
 
@@ -213,7 +214,11 @@
                         </form>
                     </div>
                     <div class="col" style="margin-left: 3%;">
-                        <textarea id="changePasswordNotes" style="visibility: hidden;"></textarea>
+                        <div id="message">
+                            <p id="oldPassEmpty" class="invalid">You must enter youre old password</p>
+                            <p id="oldPassIncorrect" class="invalid">The old password you entered is incorrect</p>
+                            <p id="matchPass" class="invalid">Password must match</p>
+                        </div>
                     </div>
                 </div>
                 
